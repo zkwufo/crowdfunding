@@ -16,42 +16,55 @@
 <script type="text/javascript" src="crowd/my-menu.js"></script>
 <script type="text/javascript">
     $(function () {
-        //1 准备生成树形结构的JSON数据，数据的来源是发送ajax请求得到
-        $.ajax({
-            "url": "menu/get/whole/tree.json",
-            "type": "post",
-            "dataType": "json",
-            "success": function (response) {
-                var result = response.result;
-                if (result == "SUCCESS") {
-                    //2 创建一个json对象用于存放对ztree做的各种设置
-                    var setting = {
-                        view: {
-                            addDiyDom: myAddDiyDom,
-                            addHoverDom: myAddHoverDom,
-                            removeHoverDom: myRemoveHoverDom
-                        },
-                        //data 下的key下的url实现点击不跳转，url给任意不存在的属性名即可
-                        data: {
-                            key: {
-                                url: "dontJump",
-                            },
-                        },
-                    };
-
-                    //3 从响应体中获取用来生成树形结构的JSON数据。
-                    var zNodes = response.data;
-                    //4 初始化树形结构
-                    $.fn.zTree.init($("#treeDemo"), setting, zNodes);
-                }
-                if (result == "FAILED") {
-                    layer.msg(response.message);
-                }
-            },
-            "error": function (response) {
-                layer.msg(response.status + " " + response.statusText);
-            },
+        //调用专门封装好的函数初始化树形结构
+        generateTree();
+        //给添加子节点按钮绑定单击响应函数
+        $("#treeDemo").on("click", ".addBtn", function () {
+            //将当前节点的id，作为新节点的pid保存到全局变量
+            window.pid = this.id;
+            //打开模态框
+            $("#menuAddModal").modal("show");
+                return false;
         });
+        //给添加子节点的模态框中的保存按钮绑定单击响应函数
+        $("#menuSaveBtn").click(function () {
+            //收集表单项中用户输入的数据
+            var name= $.trim($("#menuAddModal [name=name]").val());
+            var url = $.trim($("#menuAddModal [name=url]").val());
+            //单选按钮要定位到被选中的那一个
+            var icon = $("#menuAddModal [name=icon]:checked").val();
+            //发送ajax请求
+            $.ajax({
+                "url":"menu/save.json",
+                "type":"post",
+                "data":{
+                    "pid":window.pid,
+                    "name":name,
+                    "url":url,
+                    "icon":icon
+                },
+                "dataType":"json",
+                "success":function (response) {
+                    var result = response.result;
+                    if(result =="SUCCESS"){
+                        layer.msg("新增成功");
+                        //显示树形结构
+                        generateTree();
+                    }
+                    if(result =="FAILED"){
+                        layer.msg("新增失败:"+response.message);
+                        return false;
+                    }
+                },
+                "error":function (response) {
+                    layer.msg(response.status+" "+response.statusText);
+                }
+            });
+            //关闭模态框
+            $("#menuAddModal").modal("hide");
+            //清空表单   jquery调用click（）函数，里面不传任何参数，相当于用户点击一下。
+            $("#menuResetBtn").click();
+        })
     })
 </script>
 <body>
@@ -74,6 +87,9 @@
         </div>
     </div>
 </div>
+<%@include file="/WEB-INF/modal-menu-add.jsp" %>
+<%@include file="/WEB-INF/modal-menu-confirm.jsp" %>
+<%@include file="/WEB-INF/modal-menu-edit.jsp" %>
 </body>
 </html>
 

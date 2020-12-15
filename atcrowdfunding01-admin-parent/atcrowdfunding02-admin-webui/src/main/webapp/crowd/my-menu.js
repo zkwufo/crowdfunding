@@ -69,13 +69,13 @@ function myAddHoverDom(treeId, treeNode) {
 
     //准备各个按钮的HTML标签
     var addBtn = "<a id='" + treeNode.id + "' " +
-        "class= 'btn btn-info dropdown-toggle btn-xs' styl='margin-left:10px;padding-top:0px;' href='#' title='添加子节点'>" +
+        "class='addBtn btn btn-info dropdown-toggle btn-xs' styl='margin-left:10px;padding-top:0px;' href='#' title='添加子节点'>" +
         "&nbsp;&nbsp;<i class='fa fa-fw fa-plus rbg '></i></a>";
     var editBtn = "<a id='" + treeNode.id + "' " +
-        "class= 'btn btn-info dropdown-toggle btn-xs' styl='margin-left:10px;padding-top:0px;' href='#' title='修改子节点'>" +
+        "class= 'editBtn btn btn-info dropdown-toggle btn-xs' styl='margin-left:10px;padding-top:0px;' href='#' title='修改子节点'>" +
         "&nbsp;&nbsp;<i class='fa fa-fw fa-edit rbg '></i></a>";
     var removeBtn = "<a id='" + treeNode.id + "' " +
-        "class= 'btn btn-info dropdown-toggle btn-xs' styl='margin-left:10px;padding-top:0px;' href='#' title='删除子节点'>" +
+        "class= 'removeBtn btn btn-info dropdown-toggle btn-xs' styl='margin-left:10px;padding-top:0px;' href='#' title='删除子节点'>" +
         "&nbsp;&nbsp;<i class='fa fa-fw fa-times rbg '></i></a>";
 
     // 获取当前节点的级别数据

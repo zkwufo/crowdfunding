@@ -7,14 +7,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78a6a31-45e9-4fda-9c76-3dae7561db11" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/modal-menu-add.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/modal-menu-confirm.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/modal-menu-edit.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/menu-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/menu-page.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/crowd/my-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/crowd/my-menu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT.war" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/classes/spring-web-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/classes/spring-web-mvc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/menu-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/menu-page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/system-error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/system-error.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/classes/spring-web-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/classes/spring-web-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mvc/handler/MenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mvc/handler/MenuHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/MenuService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/MenuServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +99,11 @@
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding02-admin-webui\src\main\resources\mybatis.mapper" />
+      <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding02-admin-webui\src\main\webapp" />
+      <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding02-admin-webui\src\main\resources" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="" />
       <recent name="com.atzkw.crowd" />
@@ -105,11 +113,6 @@
       <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding02-admin-webui\src\main\webapp\css" />
       <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding02-admin-webui\src\main\webapp" />
       <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding04-admin-entity\src\main\java\com\atzkw\crowd\entity" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding02-admin-webui\src\main\resources\mybatis.mapper" />
-      <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding02-admin-webui\src\main\webapp" />
-      <recent name="D:\program\project\javaProject\atcrowdfunding\atcrowdfunding01-admin-parent\atcrowdfunding02-admin-webui\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.atcrowdfunding02_admin_webui">
@@ -381,7 +384,9 @@
       <workItem from="1607837530757" duration="2904000" />
       <workItem from="1607840699240" duration="8156000" />
       <workItem from="1608015001215" duration="4558000" />
-      <workItem from="1608020069781" duration="9975000" />
+      <workItem from="1608020069781" duration="10286000" />
+      <workItem from="1608037720791" duration="2030000" />
+      <workItem from="1608039826369" duration="3578000" />
     </task>
     <task id="LOCAL-00001" summary="到今天的完整项目">
       <created>1607839554071</created>
@@ -404,7 +409,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607849976692</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="commit">
+      <created>1608033839159</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1608033839159</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -439,10 +451,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="542" y="268" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/62.0.1474.864@62.0.1474.864" timestamp="1607838321845" />
-    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1607588686915">
+    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1608042783925">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1607588686915" />
+    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1608042783925" />
     <state x="530" y="208" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1606886803931">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -475,10 +487,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="512" y="292" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.0.1474.864@62.0.1474.864" timestamp="1606904953953" />
-    <state x="92" y="26" key="CommitChangelistDialog2" timestamp="1607849976007">
+    <state x="92" y="26" key="CommitChangelistDialog2" timestamp="1608033836985">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="92" y="26" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1607849976007" />
+    <state x="92" y="26" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1608033836985" />
     <state x="155" y="93" width="1288" height="678" key="DiffContextDialog" timestamp="1606885828968">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -487,54 +499,54 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="268" y="129" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1607840577447" />
-    <state width="1276" height="231" key="GridCell.Tab.0.bottom" timestamp="1608020053751">
+    <state width="1276" height="231" key="GridCell.Tab.0.bottom" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608020053751" />
-    <state width="1276" height="231" key="GridCell.Tab.0.center" timestamp="1608020053751">
+    <state width="1276" height="231" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.0.center" timestamp="1608039809590">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1608020053751" />
-    <state width="1276" height="231" key="GridCell.Tab.0.left" timestamp="1608020053751">
+    <state width="1276" height="231" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1608039809590" />
+    <state width="1276" height="231" key="GridCell.Tab.0.left" timestamp="1608039809590">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1608020053751" />
-    <state width="1276" height="231" key="GridCell.Tab.0.right" timestamp="1608020053751">
+    <state width="1276" height="231" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1608039809590" />
+    <state width="1276" height="231" key="GridCell.Tab.0.right" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1608020053751" />
-    <state width="1276" height="231" key="GridCell.Tab.1.bottom" timestamp="1608020053751">
+    <state width="1276" height="231" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.1.bottom" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608020053751" />
-    <state width="1276" height="231" key="GridCell.Tab.1.center" timestamp="1608020053751">
+    <state width="1276" height="231" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.1.center" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1608020053751" />
-    <state width="1276" height="231" key="GridCell.Tab.1.left" timestamp="1608020053751">
+    <state width="1276" height="231" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.1.left" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1608020053751" />
-    <state width="1276" height="231" key="GridCell.Tab.1.right" timestamp="1608020053751">
+    <state width="1276" height="231" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.1.right" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1608020053751" />
-    <state width="1276" height="231" key="GridCell.Tab.2.bottom" timestamp="1608020053752">
+    <state width="1276" height="231" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.2.bottom" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608020053752" />
-    <state width="1276" height="231" key="GridCell.Tab.2.center" timestamp="1608020053752">
+    <state width="1276" height="231" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.2.center" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1608020053752" />
-    <state width="1276" height="231" key="GridCell.Tab.2.left" timestamp="1608020053752">
+    <state width="1276" height="231" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.2.left" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1608020053752" />
-    <state width="1276" height="231" key="GridCell.Tab.2.right" timestamp="1608020053752">
+    <state width="1276" height="231" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
+    <state width="1276" height="231" key="GridCell.Tab.2.right" timestamp="1608039809591">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1608020053752" />
+    <state width="1276" height="231" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1608039809591" />
     <state width="981" height="224" key="GridCell.Tab.3.bottom" timestamp="1607579877314">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -559,10 +571,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="280" y="7" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1607840594191" />
-    <state x="392" y="154" key="Vcs.Push.Dialog.v2" timestamp="1607849994206">
+    <state x="392" y="154" key="Vcs.Push.Dialog.v2" timestamp="1608033843402">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="154" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1607849994206" />
+    <state x="392" y="154" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1608033843402" />
     <state x="593" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607841847536">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -587,10 +599,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="264" y="94" key="new project wizard/62.0.1474.864@62.0.1474.864" timestamp="1606876056283" />
-    <state x="442" y="158" width="700" height="530" key="recent.locations.popup" timestamp="1607848017869">
+    <state x="442" y="158" width="700" height="530" key="recent.locations.popup" timestamp="1608040696531">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="442" y="158" width="700" height="530" key="recent.locations.popup/62.0.1474.864@62.0.1474.864" timestamp="1607848017869" />
+    <state x="442" y="158" width="700" height="530" key="recent.locations.popup/62.0.1474.864@62.0.1474.864" timestamp="1608040696531" />
     <state x="456" y="197" key="run.anything.popup" timestamp="1607421932068">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
