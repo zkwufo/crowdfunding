@@ -33,6 +33,7 @@
     <mvc:view-controller path="/admin/to/add/page.html" view-name="admin-add"/>
     <mvc:view-controller path="/role/to/page.html" view-name="role-page"/>
     <mvc:view-controller path="/menu/to/page.html" view-name="menu-page"/>
+    <mvc:view-controller path="/test.html" view-name="test"/>
     <mvc:interceptors>
         <mvc:interceptor>
 <!--            /*  对应一层路径  /** 对应多层路径-->

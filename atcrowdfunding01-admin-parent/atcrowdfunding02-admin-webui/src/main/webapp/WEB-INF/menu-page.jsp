@@ -8,7 +8,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html lang="zh-CN">
-<%@include file="/WEB-INF/include-head.jsp"%>
+<%@include file="/WEB-INF/include-head.jsp" %>
 <%--导入ztree的css文件--%>
 <link rel="stylesheet" href="ztree/zTreeStyle.css"/>
 <%--导入ztree的js文件--%>
@@ -16,47 +16,24 @@
 <script type="text/javascript" src="crowd/my-menu.js"></script>
 <script type="text/javascript">
     $(function () {
-        //1 准备生成树形结构的JSON数据，数据的来源是发送ajax请求得到
-        $.ajax({
-           "url":"menu/get/whole/tree.json",
-            "type":"post",
-            "dataType":"json",
-            "success":function (response) {
-                var result = response.result;
-                if(result == "SUCCESS"){
-                //2 创建一个json对象用于存放对ztree做的各种设置
-                    var setting = {
-                        "view":{
-                            addDiyDom: myAddDiyDom
-                        }
-                    };
-
-                //3 从响应体中获取用来生成树形结构的JSON数据。
-                    var zNodes = response.data;
-                //4 初始化树形结构
-                $.fn.zTree.init($("#treeDemo"),setting,zNodes);
-                }
-                if(result =="FAILED"){
-                    layer.msg(response.message);
-                }
-            },
-            "error":function (response) {
-                layer.msg(response.status + " " + response.statusText);
-            },
-        });
+        //调用专门封装好的函数初始化树形结构
+        generateTree();
     })
 </script>
 <body>
-<%@include file="/WEB-INF/include-nav.jsp"%>
+<%@include file="/WEB-INF/include-nav.jsp" %>
 <div class="container-fluid">
     <div class="row">
-        <%@include file="/WEB-INF/include-sidebar.jsp"%>
+        <%@include file="/WEB-INF/include-sidebar.jsp" %>
         <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
 
             <div class="panel panel-default">
-                <div class="panel-heading"><i class="glyphicon glyphicon-th-list"></i> 权限菜单列表 <div style="float:right;cursor:pointer;" data-toggle="modal" data-target="#myModal"><i class="glyphicon glyphicon-question-sign"></i></div></div>
+                <div class="panel-heading"><i class="glyphicon glyphicon-th-list"></i> 权限菜单列表
+                    <div style="float:right;cursor:pointer;" data-toggle="modal" data-target="#myModal"><i
+                            class="glyphicon glyphicon-question-sign"></i></div>
+                </div>
                 <div class="panel-body">
-<%--                    这个ul标签是ztree动态生成的节点所依附的静态节点--%>
+                    <%--                    这个ul标签是ztree动态生成的节点所依附的静态节点--%>
                     <ul id="treeDemo" class="ztree"></ul>
                 </div>
             </div>
