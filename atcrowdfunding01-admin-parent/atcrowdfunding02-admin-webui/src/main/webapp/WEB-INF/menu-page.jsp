@@ -64,7 +64,107 @@
             $("#menuAddModal").modal("hide");
             //清空表单   jquery调用click（）函数，里面不传任何参数，相当于用户点击一下。
             $("#menuResetBtn").click();
-        })
+        });
+        //给修改子节点按钮绑定单击响应函数
+        $("#treeDemo").on("click", ".editBtn", function () {
+            //将当前节点的id，保存到全局变量
+            window.id = this.id;
+            //打开模态框
+            $("#menuEditModal").modal("show");
+            //回显数据
+            //获取ztreeobj对象
+            var zTreeObj = $.fn.zTree.getZTreeObj("treeDemo");
+            // 根据id属性查询节点对象
+            //用来搜索节点的属性名
+            var key = "id";
+            //用来搜索节点的属性值
+            var value = window.id;
+
+            var currentNode = zTreeObj.getNodeByParam(key,value);
+            //表单回显数据
+            $("#menuEditModal [name=name]").val(currentNode.name);
+            $("#menuEditModal [name=url]").val(currentNode.url);
+            //radio回显的本质是把value属性和currentNode.icon一致的radio选中
+            //被选中的radio的value属性可以组成一个数组，然后在用这个数组设置回radio，就能够把对应的值选中
+            $("#menuEditModal [name=icon]").val([currentNode.icon]);
+            return false;
+        });
+        //给模态框中的更新按钮绑定单击响应事件。
+        $("#menuEditBtn").click(function () {
+            //收集表单信息
+            var name = $("#menuEditModal [name=name]").val();
+            var url = $("#menuEditModal [name=url]").val();
+            var icon = $("#menuEditModal [name=icon]:checked").val();
+            //发送ajax请求
+            $.ajax({
+                "url":"menu/update.json",
+                "type":"post",
+                "data":{
+                    "id":window.id,
+                    "name":name,
+                    "url":url,
+                    "icon":icon
+                },
+                "dataType":"json",
+                "success":function (response) {
+                    var result = response.result;
+                    if(result == "SUCCESS"){
+                        layer.msg("更新成功");
+                        generateTree();
+                    }
+                    if(result == "FAILED"){
+                        layer.msg("更新失败"+response.message);
+                    }
+                },
+                "error":function (response) {
+                    layer.msg(response.status+" "+response.statusText);
+                }
+            });
+            //关闭模态框
+            $("#menuEditModal").modal("hide");
+        });
+        //给删除按钮绑定单击响应函数
+        $("#treeDemo").on("click",".removeBtn",function () {
+            window.id = this.id;
+            //打开模态框
+            $("#menuConfirmModal").modal("show");
+            //获取ztreeobj对象  这里的treeid就是所依附的静态节点的id
+            var zTreeObj = $.fn.zTree.getZTreeObj("treeDemo");
+            // 根据id属性查询节点对象
+            //用来搜索节点的属性名
+            var key = "id";
+            //用来搜索节点的属性值
+            var value = window.id;
+            var currentNode = zTreeObj.getNodeByParam(key,value);
+            $("#removeNodeSpan").html(" [<i class='"+currentNode.icon+"'></i>"+currentNode.name+"]");
+            return false;
+        });
+        //给删除页面模态框的确认按钮绑定单击响应函数
+        $("#confirmBtn").click(function () {
+            $.ajax({
+                "url":"menu/remove.json",
+                "type":"post",
+                "data":{
+                    "id":window.id
+                },
+                "dataType":"json",
+                "success":function (response) {
+                    var result = response.result;
+                    if(result == "SUCCESS"){
+                        layer.msg("删除成功");
+                        generateTree();
+                    }
+                    if(result =="FAILED"){
+                        layer.msg("删除失败: "+response.message);
+                    }
+                },
+                "error":function (response) {
+                    layer.msg(response.status+" "+response.statusText);
+                },
+            });
+            //关闭模态框
+            $("#menuConfirmModal").modal("hide");
+        });
     })
 </script>
 <body>

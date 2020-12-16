@@ -77,10 +77,11 @@
                     <button type="button" class="btn btn-danger" style="float:right;margin-left:10px;"><i
                             class=" glyphicon glyphicon-remove"></i> 删除
                     </button>
-<%--                    <button type="button" class="btn btn-primary" style="float:right;"--%>
-<%--                            onclick="window.location.href='add.html'"><i class="glyphicon glyphicon-plus"></i> 新增--%>
-<%--                    </button>--%>
-                    <a href="admin/to/add/page.html" style="float: right" class="btn btn-primary"><i class="glyphicon glyphicon-plus"></i> 新增</a>
+                    <%--                    <button type="button" class="btn btn-primary" style="float:right;"--%>
+                    <%--                            onclick="window.location.href='add.html'"><i class="glyphicon glyphicon-plus"></i> 新增--%>
+                    <%--                    </button>--%>
+                    <a href="admin/to/add/page.html" style="float: right" class="btn btn-primary"><i
+                            class="glyphicon glyphicon-plus"></i> 新增</a>
                     <br>
                     <hr style="clear:both;">
                     <div class="table-responsive">
@@ -112,11 +113,16 @@
                                         <td>${admin.userName}</td>
                                         <td>${admin.email}</td>
                                         <td>
-                                            <button type="button" class="btn btn-success btn-xs"><i
-                                                    class=" glyphicon glyphicon-check"></i></button>
-<%--                                            <button type="button" class="btn btn-primary btn-xs"><i
-<%--                                                    class=" glyphicon glyphicon-pencil"></i></button>--%>
-                                            <a href="admin/to/edit/page.html?adminId=${admin.id}&pageNum=${requestScope.pageInfo.pageNum}&keyword=${param.keyword}" class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></a>
+                                                <%--分配按钮--%>
+                                                <%--<button type="button" class="btn btn-success btn-xs"><i--%>
+                                                <%--class=" glyphicon glyphicon-check"></i></button>--%>
+                                            <a href="assign/to/assign/role/page.html?adminId=${admin.id}&pageNum=${requestScope.pageInfo.pageNum}&keyword=${param.keyword}"
+                                               class="btn btn-success btn-xs"><i class="glyphicon glyphicon-check"></i> </a>
+                                                <%--修改按钮--%>
+                                                <%--<button type="button" class="btn btn-primary btn-xs"><i
+                                                <%--class=" glyphicon glyphicon-pencil"></i></button>--%>
+                                            <a href="admin/to/edit/page.html?adminId=${admin.id}&pageNum=${requestScope.pageInfo.pageNum}&keyword=${param.keyword}"
+                                               class="btn btn-primary btn-xs"><i class=" glyphicon glyphicon-pencil"></i></a>
                                             <button type="button" class="btn btn-danger btn-xs"><i id="delete"
                                                                                                    adminId="${admin.id}"
                                                                                                    class=" glyphicon glyphicon-remove"></i>

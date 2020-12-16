@@ -37,7 +37,7 @@ public class AdminServiceImpl implements AdminService {
         try {
             adminMapper.insert(admin);
         } catch (Exception e) {
-            if(e instanceof DuplicateKeyException){
+            if (e instanceof DuplicateKeyException) {
                 throw new LoginAcctAlreadyInUseException(CrowdConstant.MESSAGE_LOGIN_ACCT_ALREADY_IN_USE);
             }
         }
@@ -57,22 +57,22 @@ public class AdminServiceImpl implements AdminService {
         criteria.andLoginAcctEqualTo(loginAcct);
         List<Admin> list = adminMapper.selectByExample(adminExample);
         // 2.判断admin是否为空
-        if(list == null || list.size()==0){
+        if (list == null || list.size() == 0) {
             // 3.如果为空则抛出异常
             throw new LoginFailedException(CrowdConstant.MESSAGE_LOGIN_FAILED);
         }
-        if(list.size()>1){
+        if (list.size() > 1) {
             throw new RuntimeException(CrowdConstant.MESSAGE_SYSTEM_ERROR_LOGIN_NOT_UNIQUE);
         }
         Admin admin = list.get(0);
-        if(admin ==null){
+        if (admin == null) {
             throw new LoginFailedException(CrowdConstant.MESSAGE_LOGIN_FAILED);
         }
         // 4.若不为空则将数据库密码从admin对象中取出
         String userPwdDB = admin.getUserPswd();
         // 5.将表单提交的明文密码加密，对密码进行比较
         String loginPwd = CrowdUtil.md5(loginPswd);
-        if(!Objects.equals(userPwdDB,loginPwd)){
+        if (!Objects.equals(userPwdDB, loginPwd)) {
             // 6.如果比较结果不一致则抛出异常
             throw new LoginFailedException(CrowdConstant.MESSAGE_LOGIN_FAILED);
         }
@@ -84,7 +84,7 @@ public class AdminServiceImpl implements AdminService {
     public PageInfo<Admin> getPageInfo(String keyword, Integer pageNum, Integer pageSize) {
         // 1调用Pagehelper的静态方法开启分页功能
 
-        PageHelper.startPage(pageNum,pageSize);
+        PageHelper.startPage(pageNum, pageSize);
         // 2执行查询
         List<Admin> list = adminMapper.selectAdminByKeyword(keyword);
         // 3封装都pageinfo对象中
@@ -107,10 +107,21 @@ public class AdminServiceImpl implements AdminService {
         try {
             adminMapper.updateByPrimaryKeySelective(admin);
         } catch (Exception e) {
-            if(e instanceof DuplicateKeyException){
+            if (e instanceof DuplicateKeyException) {
                 //保证更新后的账户名也不冲突，冲突了返回异常信息。
                 throw new UpdateAcctAlreadyInUseException(CrowdConstant.MESSAGE_LOGIN_ACCT_ALREADY_IN_USE);
             }
+        }
+    }
+
+    @Override
+    public void saveAdminRoleRelationship(Integer adminId, List<Integer> roleIdList) {
+        //为了简化操作：先根据adminId删除旧的数据，再根据roleIdList保存全部新的数据
+        //1 根据adminId删除旧的关联关系数据
+        adminMapper.deleteOldRelationship(adminId);
+        //2 根据roldIdList 和adminId保存新的关联关系
+        if (roleIdList != null && roleIdList.size()>0){
+            adminMapper.insertNewRelationship(adminId,roleIdList);
         }
     }
 }
