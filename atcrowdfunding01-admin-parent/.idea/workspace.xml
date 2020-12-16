@@ -7,28 +7,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c78a6a31-45e9-4fda-9c76-3dae7561db11" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/assign-role.jsp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mvc/handler/AssignHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/resources/mybatis.mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/resources/mybatis.mapper/AdminMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/resources/mybatis.mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/resources/mybatis.mapper/RoleMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/admin-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/admin-page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/menu-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/webapp/WEB-INF/menu-page.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/src/main/resources/mybatis.mapper/AuthMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mapper/AuthMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/AuthService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/AuthServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding04-admin-entity/src/main/java/com/atzkw/crowd/entity/Auth.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/atcrowdfunding04-admin-entity/src/main/java/com/atzkw/crowd/entity/AuthExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT.war" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/admin-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/admin-page.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/classes/mybatis.mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/classes/mybatis.mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/classes/mybatis.mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/classes/mybatis.mapper/RoleMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding03-admin-component-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/lib/atcrowdfunding03-admin-component-1.0-SNAPSHOT.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/menu-page.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/atcrowdfunding02-admin-webui-1.0-SNAPSHOT/WEB-INF/menu-page.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mapper/AdminMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mapper/AdminMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mapper/RoleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mapper/RoleMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mvc/handler/MenuHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mvc/handler/MenuHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/MenuService.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/MenuService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/api/RoleService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/AdminServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/AdminServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/MenuServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/MenuServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/RoleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/classes/mybatis.mapper/AdminMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/classes/mybatis.mapper/AdminMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/classes/mybatis.mapper/RoleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding02-admin-webui/target/classes/mybatis.mapper/RoleMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mvc/handler/AssignHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/src/main/java/com/atzkw/crowd/mvc/handler/AssignHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/mapper/AdminMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/mapper/AdminMapper.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/mapper/RoleMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/mapper/RoleMapper.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/mvc/handler/MenuHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/mvc/handler/MenuHandler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/api/AdminService.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/api/AdminService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/api/MenuService.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/api/MenuService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/api/RoleService.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/api/RoleService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/impl/AdminServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/impl/AdminServiceImpl.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/impl/MenuServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/impl/MenuServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/impl/RoleServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/atcrowdfunding03-admin-component/target/classes/com/atzkw/crowd/service/impl/RoleServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../atcrowdfunding06-common-reverse/src/main/resources/generatorConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../atcrowdfunding06-common-reverse/src/main/resources/generatorConfig.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,10 +58,10 @@
         <option value="Tag Library Descriptor" />
         <option value="FxmlFile" />
         <option value="spring-beans.schema" />
-        <option value="Interface" />
         <option value="Jsp File" />
         <option value="JavaScript File" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -399,7 +402,7 @@
       <workItem from="1608020069781" duration="10286000" />
       <workItem from="1608037720791" duration="2030000" />
       <workItem from="1608039826369" duration="4098000" />
-      <workItem from="1608098546466" duration="19898000" />
+      <workItem from="1608098546466" duration="21914000" />
     </task>
     <task id="LOCAL-00001" summary="到今天的完整项目">
       <created>1607839554071</created>
@@ -436,7 +439,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608043444225</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="commit">
+      <created>1608126181278</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1608126181278</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,10 +481,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="542" y="268" key="#com.intellij.ide.actions.ChooseComponentsToExportDialog/62.0.1474.864@62.0.1474.864" timestamp="1607838321845" />
-    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1608121696254">
+    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser" timestamp="1608127240149">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1608121696254" />
+    <state x="605" y="148" key="#com.intellij.ide.util.MemberChooser/62.0.1474.864@62.0.1474.864" timestamp="1608127240149" />
     <state x="530" y="208" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1606886803931">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -507,10 +517,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="512" y="292" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/62.0.1474.864@62.0.1474.864" timestamp="1606904953953" />
-    <state x="92" y="26" key="CommitChangelistDialog2" timestamp="1608043441889">
+    <state x="92" y="26" key="CommitChangelistDialog2" timestamp="1608126180349">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="92" y="26" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1608043441889" />
+    <state x="92" y="26" key="CommitChangelistDialog2/62.0.1474.864@62.0.1474.864" timestamp="1608126180349" />
     <state x="155" y="93" width="1288" height="678" key="DiffContextDialog" timestamp="1606885828968">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -519,54 +529,54 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="268" y="129" key="FileChooserDialogImpl/62.0.1474.864@62.0.1474.864" timestamp="1607840577447" />
-    <state width="1276" height="231" key="GridCell.Tab.0.bottom" timestamp="1608043956934">
+    <state width="1276" height="118" key="GridCell.Tab.0.bottom" timestamp="1608127109934">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608043956934" />
-    <state width="1276" height="231" key="GridCell.Tab.0.center" timestamp="1608043956934">
+    <state width="1276" height="118" key="GridCell.Tab.0.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608127109934" />
+    <state width="1276" height="118" key="GridCell.Tab.0.center" timestamp="1608127109934">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1608043956934" />
-    <state width="1276" height="231" key="GridCell.Tab.0.left" timestamp="1608043956934">
+    <state width="1276" height="118" key="GridCell.Tab.0.center/62.0.1474.864@62.0.1474.864" timestamp="1608127109934" />
+    <state width="1276" height="118" key="GridCell.Tab.0.left" timestamp="1608127109933">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1608043956934" />
-    <state width="1276" height="231" key="GridCell.Tab.0.right" timestamp="1608043956934">
+    <state width="1276" height="118" key="GridCell.Tab.0.left/62.0.1474.864@62.0.1474.864" timestamp="1608127109933" />
+    <state width="1276" height="118" key="GridCell.Tab.0.right" timestamp="1608127109934">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1608043956934" />
-    <state width="1276" height="231" key="GridCell.Tab.1.bottom" timestamp="1608043956935">
+    <state width="1276" height="118" key="GridCell.Tab.0.right/62.0.1474.864@62.0.1474.864" timestamp="1608127109934" />
+    <state width="1276" height="118" key="GridCell.Tab.1.bottom" timestamp="1608127109935">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608043956935" />
-    <state width="1276" height="231" key="GridCell.Tab.1.center" timestamp="1608043956934">
+    <state width="1276" height="118" key="GridCell.Tab.1.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608127109935" />
+    <state width="1276" height="118" key="GridCell.Tab.1.center" timestamp="1608127109934">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1608043956934" />
-    <state width="1276" height="231" key="GridCell.Tab.1.left" timestamp="1608043956934">
+    <state width="1276" height="118" key="GridCell.Tab.1.center/62.0.1474.864@62.0.1474.864" timestamp="1608127109934" />
+    <state width="1276" height="118" key="GridCell.Tab.1.left" timestamp="1608127109934">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1608043956934" />
-    <state width="1276" height="231" key="GridCell.Tab.1.right" timestamp="1608043956934">
+    <state width="1276" height="118" key="GridCell.Tab.1.left/62.0.1474.864@62.0.1474.864" timestamp="1608127109934" />
+    <state width="1276" height="118" key="GridCell.Tab.1.right" timestamp="1608127109934">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1608043956934" />
-    <state width="1276" height="231" key="GridCell.Tab.2.bottom" timestamp="1608043956935">
+    <state width="1276" height="118" key="GridCell.Tab.1.right/62.0.1474.864@62.0.1474.864" timestamp="1608127109934" />
+    <state width="1276" height="118" key="GridCell.Tab.2.bottom" timestamp="1608127109937">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608043956935" />
-    <state width="1276" height="231" key="GridCell.Tab.2.center" timestamp="1608043956935">
+    <state width="1276" height="118" key="GridCell.Tab.2.bottom/62.0.1474.864@62.0.1474.864" timestamp="1608127109937" />
+    <state width="1276" height="118" key="GridCell.Tab.2.center" timestamp="1608127109936">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1608043956935" />
-    <state width="1276" height="231" key="GridCell.Tab.2.left" timestamp="1608043956935">
+    <state width="1276" height="118" key="GridCell.Tab.2.center/62.0.1474.864@62.0.1474.864" timestamp="1608127109936" />
+    <state width="1276" height="118" key="GridCell.Tab.2.left" timestamp="1608127109936">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1608043956935" />
-    <state width="1276" height="231" key="GridCell.Tab.2.right" timestamp="1608043956935">
+    <state width="1276" height="118" key="GridCell.Tab.2.left/62.0.1474.864@62.0.1474.864" timestamp="1608127109936" />
+    <state width="1276" height="118" key="GridCell.Tab.2.right" timestamp="1608127109937">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state width="1276" height="231" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1608043956935" />
+    <state width="1276" height="118" key="GridCell.Tab.2.right/62.0.1474.864@62.0.1474.864" timestamp="1608127109937" />
     <state width="981" height="224" key="GridCell.Tab.3.bottom" timestamp="1607579877314">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
@@ -591,10 +601,10 @@
       <screen x="62" y="0" width="1474" height="864" />
     </state>
     <state x="280" y="7" key="SettingsEditor/62.0.1474.864@62.0.1474.864" timestamp="1607840594191" />
-    <state x="392" y="154" key="Vcs.Push.Dialog.v2" timestamp="1608043446048">
+    <state x="392" y="154" key="Vcs.Push.Dialog.v2" timestamp="1608126183844">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
-    <state x="392" y="154" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1608043446048" />
+    <state x="392" y="154" key="Vcs.Push.Dialog.v2/62.0.1474.864@62.0.1474.864" timestamp="1608126183844" />
     <state x="593" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607841847536">
       <screen x="62" y="0" width="1474" height="864" />
     </state>
