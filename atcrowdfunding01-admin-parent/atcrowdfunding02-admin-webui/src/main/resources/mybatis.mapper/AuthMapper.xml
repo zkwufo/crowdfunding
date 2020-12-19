@@ -68,6 +68,9 @@
   <sql id="Base_Column_List" >
     id, name, title, category_id
   </sql>
+  <select id="getAssignAuthIdByRoleId" resultType="int">
+    select auth_id from inner_role_auth where role_id=#{roleId}
+  </select>
   <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.atzkw.crowd.entity.AuthExample" >
     select
     <if test="distinct" >
@@ -98,6 +101,13 @@
       <include refid="Example_Where_Clause" />
     </if>
   </delete>
+  <delete id="deleteOldRelationship">
+    delete from inner_role_auth where role_id=#{roleId}
+  </delete>
+  <insert id="insertNewRelationship">
+    insert into inner_role_auth (auth_id,role_id)values
+    <foreach collection="authIdArray" item="authId" separator=",">(#{authId},#{roleId})</foreach>
+  </insert>
   <insert id="insert" parameterType="com.atzkw.crowd.entity.Auth" >
     insert into t_auth (id, name, title, 
       category_id)

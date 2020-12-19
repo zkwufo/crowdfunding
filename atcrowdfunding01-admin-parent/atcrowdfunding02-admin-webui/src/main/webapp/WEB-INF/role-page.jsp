@@ -11,6 +11,8 @@
 <%@include file="/WEB-INF/include-head.jsp" %>
 <link rel="stylesheet" href="css/pagination.css">
 <script type="text/javascript" src="jquery/jquery.pagination.js"></script>
+<link rel="stylesheet" href="ztree/zTreeStyle.css">
+<script type="text/javascript" src="ztree/jquery.ztree.all-3.5.min.js"></script>
 <script type="text/javascript" src="crowd/my-role.js"></script>
 <script type="text/javascript">
     $(function () {
@@ -204,6 +206,60 @@
             }
             showConfirmModal(roleArray);
         });
+        // 13 给分配权限按钮绑定单击响应函数
+        $("#rolePageBody").on("click", ".checkBtn", function () {
+            window.roleId = this.id;
+            //打开模态框
+            $("#assignModal").modal("show");
+            //在模态框中装载Auth的树形结构数据
+            fillAuthTree();
+            return false;
+        });
+        //14 给模态框中的确认按钮绑定单击响应函数
+        $("#assignBtn").click(function () {
+            //手机树形结构的各个节点中被勾选的节点
+            //声明一个专门的数组存放id
+            var authIdArray = [];
+            //获取zTreeObj对象
+            var zTreeObj = $.fn.zTree.getZTreeObj("treeDemo");
+            //获取被选中的节点
+            var checkedNodes = zTreeObj.getCheckedNodes();
+            //遍历checkedNodes
+            for (var i = 0; i < checkedNodes.length; i++) {
+                var checkedNode = checkedNodes[i];
+                var authId = checkedNode.id;
+                authIdArray.push(authId);
+            }
+            // 发送请求执行分配
+            var requestBody = {
+                //authIdArray是数组
+                "authIdArray": authIdArray,
+                //为了服务器端handler方法能够统一使用List<Integer>方式接受数据，roleId也存入数组
+                "roleId": [window.roleId]
+            };
+            requestBody = JSON.stringify(requestBody);
+            $.ajax({
+                "url": "assign/do/role/assign/auth.json",
+                "type": "post",
+                "data": requestBody,
+                "contentType": "application/json;charset=UTF-8",
+                "dataType": "JSON",
+                "success": function (response) {
+                    var result = response.result;
+                    if (result == "SUCCESS") {
+                        layer.msg("权限修改成功");
+                        generatePage();
+                    }
+                    if (result == "FAILED") {
+                        layer.msg("修改失败!" + response.message);
+                    }
+                },
+                "error": function (response) {
+                    layer.msg(response.status + " " + response.statusText);
+                }
+            });
+            $("#assignModal").modal("hide");
+        });
     })
 </script>
 <body>
@@ -265,5 +321,6 @@
 <%@include file="/WEB-INF/modal-role-add.jsp" %>
 <%@include file="/WEB-INF/modal-role-edit.jsp" %>
 <%@include file="/WEB-INF/modal-role-remove.jsp" %>
+<%@include file="/WEB-INF/modal-role-assign-auth.jsp" %>
 </body>
 </html>

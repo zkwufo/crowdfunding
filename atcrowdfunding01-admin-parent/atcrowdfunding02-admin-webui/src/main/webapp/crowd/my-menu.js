@@ -39,9 +39,9 @@ function generateTree() {
 }
 function myAddDiyDom(treeId, treeNode) {
     //treeId 是整个树形结构附着的ul标签的id
-    console.log("treeid是:" + treeId);
+    // console.log("treeid是:" + treeId);
     //当前树形节点的全部的数据，包括从后端查询得到的menu对象的全部属性
-    console.log(treeNode);
+    // console.log(treeNode);
     //zTree生成id的规则
     //例子：treeDemo_7_ico
     //解析：ul标签的id_当前节点的序号_功能

@@ -1,16 +1,21 @@
 package com.atzkw.crowd.mvc.handler;
 
+import com.atzkw.crowd.entity.Auth;
 import com.atzkw.crowd.entity.Role;
 import com.atzkw.crowd.service.api.AdminService;
 import com.atzkw.crowd.service.api.AuthService;
 import com.atzkw.crowd.service.api.RoleService;
+import com.atzkw.crowd.util.ResultEntity;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.List;
+import java.util.Map;
 
 @Controller
 public class AssignHandler {
@@ -45,4 +50,26 @@ public class AssignHandler {
         adminService.saveAdminRoleRelationship(adminId,roleIdList);
         return "redirect:/admin/get/page.html?pageNum="+pageNum+"&keyword="+keyword;
     }
+
+    @ResponseBody
+    @RequestMapping("assign/get/all/auth.json")
+    public ResultEntity<List<Auth>> getAllAuth(){
+        List<Auth> authList = authService.getAll();
+        return ResultEntity.successWithData(authList);
+    }
+    @ResponseBody
+    @RequestMapping("assign/get/assigned/auth/id/by/role/id.json")
+    public ResultEntity<List<Integer>> getAssignAuthIdByRoleId(
+            @RequestParam("roleId") Integer roleId){
+        List<Integer> authIdList = authService.getAssignAuthIdByRoleId(roleId);
+        return ResultEntity.successWithData(authIdList);
+    }
+    @ResponseBody
+    @RequestMapping("assign/do/role/assign/auth.json")
+    public ResultEntity<String> saveRoleAuthRelationship(
+            @RequestBody Map<String,List<Integer>> map){
+        authService.saveRoleAuthRelationship(map);
+        return ResultEntity.successWithoutData();
+    }
+
 }
